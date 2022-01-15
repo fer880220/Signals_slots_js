@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OpenInsta</title>
+</head>
+<body>
+<h1>OpenInsta</h1>
+<input type="file" accept="image/*" id="fileinput" />
+<div>
+    <label for="red">Red</label>
+    <input type="range" min="-255" max="255" value="0" id="red">
+
+    <label for="green">Green</label>
+    <input type="range" min="-255" max="255" value="0" id="green">
+
+
+    <label for="blue">Blue</label>
+    <input type="range" min="-255" max="255" value="0" id="blue">
+
+    <label for="brightness">Brightness</label>
+    <input type="range" min="-255" max="255" value="0" id="brightness">
+
+    <label for="contrast">Constrast</label>
+    <input type="range" min="-255" max="255" value="0" id="contrast">
+
+    <label for="grayscale">Grayscale</label>
+    <input type="checkbox" id="grayscale">
+
+    <br/>
+	<div>
+    <canvas id="canvas" width="0" height="0"></canvas>
+	<textarea id="myText" width="120" height="120"></textarea>
+	</div>
+</div>
+<script src="signals_slots.js"></script>
+<script src="main.js"></script>
+
+</body>
+</html>
